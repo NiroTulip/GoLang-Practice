@@ -18,8 +18,9 @@ Print one integer - the number of tens.  */
 package main
 import "fmt"
 func main(){
- var a int 
+ var a,b,c int
  fmt.Scan(&a)
- var b int = a % 10
- fmt.Print(b)
+ b = a % 100;   
+ c = b / 10
+ fmt.Print(c)
 }
