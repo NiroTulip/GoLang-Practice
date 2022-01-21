@@ -1,8 +1,10 @@
 ﻿Random integer sequence generator. The sequence must be of a predetermined length.
 The numbers in the sequence do not repeat and are sorted in ascending order. The range of numbers (maximum value) is set in advance. 
+Input values are passed as arguments to the function: generator(L, N)
 ------------------------------
-Генератор последовательностей случайных целых чисел. Последовательность должна быть заданной заранее длины.
-Числа в последовательности не повторяются и упорядочены по возрастанию. Диапазон чисел (максимальное значение) задается заранее.
+Генератор последовательностей случайных целых чисел. Последовательность должна быть заданной заранее длины L.
+Числа в последовательности не повторяются и упорядочены по возрастанию. Диапазон чисел (максимальное значение) задается заранее N.
+Входные значения передаются аргументами в функцию: generator(L, N)
 
 
 
