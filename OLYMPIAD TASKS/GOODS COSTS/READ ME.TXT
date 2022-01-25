@@ -1,0 +1,80 @@
+There are 0 < N <= 10*5 warehouses. Each contains up to 0 < M <= 10*5 goods. Each product has its own unique numerical article 0 < a <= 10*5. Some items may be in multiple warehouses at the same time. For each warehouse, the cost of delivery to the recipient is known.
+
+It is necessary to determine what value of the product to show the user, taking into account its availability in the warehouse and the cost of delivery. Of course, this should be the lowest possible price.
+
+Input data format
+
+The following parameters are passed to the input: N - the number of warehouses. Next, each line contains the number of the warehouse 0 < W <= 10*5, the number of different articles of goods on it 0 < C <= 10*5, and then in pairs the articles of these goods a and the cost of delivery d.
+
+Next comes the number 0 < M <= 10*5 - this is the number of requests. Then there are M lines, each containing the item a and its price p.
+
+Output format
+
+It is required to display in each new line the number of the warehouse and the minimum cost of the goods, taking into account the cost of delivery from this warehouse. If the goods cannot be delivered, then print -1 -1. In case of equal delivery prices from two warehouses, display the warehouse with the lowest number.
+
+Examples
+Input data:
+
+2
+1 2 123 321 555 999
+2 1 123 101
+3
+123 9999
+555 10001
+42 1000
+
+Output:
+
+2 10100
+1 11000
+-eleven
+
+Explanation for example:
+
+    1. Goods with article 123 are in warehouses 1 and 2, the cost of delivery from the first warehouse is 321, from the second 101. The cost of the goods itself is 9999. The minimum cost of the goods, including delivery, is 9999 + 101 = 10100.
+    2. The item with article 555 is in warehouse 1, the price of delivery to the user is 999. The cost of the item itself is 10001. Then the cost including delivery is 10001 + 999 = 11000.
+    3. There is no product with article 42 in any of the warehouses. Therefore -1 -1 is output. 
+
+MADE 3 DIFFERENT IMPLEMENTATIONS WITH DIFFERENT APPROACHES
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+Есть 0 < N  <= 10*5 складов. На каждом лежит до 0 < M <= 10*5 товаров. У каждого товара свой уникальный числовой артикул 0 < a <= 10*5. Некоторые товары могут находиться на нескольких складах одновременно. Для каждого склада известна стоимость доставки до получателя.
+
+Нужно определить, какую стоимость товара показать пользователю, учитывая его доступность на складе и стоимость доставки. Разумеется, это должна быть наименьшая из возможных цен.
+
+Формат входных данных
+
+На вход передаются следующие параметры: N - количество складов. Далее в каждой строчке записаны номер склада 0 < W <= 10*5, количество разных артикулов товара на нём 0 < C <= 10*5, и далее парами артикулы этих товаров a и стоимость доставки d. 
+
+Далее идёт число 0 < M <= 10*5 – это количество запросов. После чего идёт M строк, в каждой передаётся артикул товара a и его цена p.
+
+Формат выходных данных
+
+Требуется вывести в каждой новой строке номер склада и минимальную стоимость товара с учётом стоимости доставки с этого склада. Если товар нельзя доставить, то требуется вывести -1 -1. В случае равенства цен доставки с двух складов вывести склад с наименьшим номером.
+
+Примеры
+Входные данные:
+
+2 
+1 2 123 321 555 999 
+2 1 123 101 
+3 
+123 9999 
+555 10001 
+42 1000
+
+Выходные данные:
+
+2 10100 
+1 11000 
+-1 -1
+
+Объяснение к примеру:
+
+    1. Товар с артикулом 123 находится на складах 1 и 2, стоимость доставки с первого склада 321, со второго 101. Стоимость самого товара 9999. Минимальная стоимость товара с учётом доставки 9999 + 101 = 10100.
+    2. Товар с артикулом 555 находится на складе 1, цена доставки до пользователя 999. Стоимость самого товара 10001. Тогда стоимость с учётом доставки 10001 + 999 = 11000.
+    3. Товара с артикулом 42 нет ни на одном из складов. Поэтому выводится -1 -1.
+
+СДЕЛАНО 3 РАЗНЫХ РЕАЛИЗАЦИИ С РАЗНЫМ ПОДХОДОМ
+
